@@ -34,8 +34,11 @@ LIVE='https://lskvfortius.nl'
 def fix(p):
     t=open(p).read()
     if 'localhost:8881' in t: open(p,'w').write(t.replace('http://localhost:8881',LIVE))
-for f in os.listdir(d('src','content')):
-    shutil.copy(d('src','content',f), d('dist','content',f)); fix(d('dist','content',f))
+for root, _dirs, files in os.walk(d('src','content')):
+    rel = os.path.relpath(root, d('src','content'))
+    os.makedirs(d('dist','content',rel), exist_ok=True)
+    for f in files:
+        shutil.copy(os.path.join(root, f), d('dist','content',rel,f)); fix(d('dist','content',rel,f))
 if os.path.isdir(d('dist','patterns')):
     for f in os.listdir(d('dist','patterns')): fix(d('dist','patterns',f))
 print('dist ready')
