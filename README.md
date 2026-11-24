@@ -16,6 +16,7 @@ The board needed a site that anyone could update without code, with a consistent
 - **A merch page** (`tools/make-merch.py` generates it): product cards with colour variants and image switching driven by image captions (so editors rename a colour by editing a caption), a countdown to the order deadline, an embedded Google Form, and a closed state for after the drop. Includes a small, dependency-free script that survives WordPress's content filtering.
 - **Pages and navigation**: Bestuur, Commissies (alternating sections, text-only variant when there is no photo), a dropdown menu that works in the mobile overlay, and a highlighted "Merch" nav button with reduced-motion support for the time of a drop.
 - **Accessibility and SEO**: alt text on every image (also in the media library defaults), form iframe titles, contrast-checked red-on-black text colour, `prefers-reduced-motion`, meta descriptions from page excerpts, JSON-LD organisation data.
+- **English version** under `/en/`: an English twin of every page, with its own header, footer, menu and page template (`src/content/en/`), since the plan has no multilingual plugin.
 - **Verification tooling** (`tools/`): computed-style snapshot diffing between the local copy and the live site, screenshot scripts, an a11y check, an image-weight report.
 - **Docs for the board** (`docs/`): an editor guide in plain language, a deploy runbook, a CSS audit and a Global Styles checklist.
 
