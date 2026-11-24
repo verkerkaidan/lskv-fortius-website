@@ -36,13 +36,23 @@ screenshots/ a few screens of the result
 
 ## Screenshots
 
-| | |
+![Merch page (desktop)](screenshots/merch-page.jpg)
+
+*The merch page after the order round closed: hero, status band, product grid.*
+
+| Colour selector (editors rename a colour via the image caption) | Mobile page and menu with dropdown |
 |---|---|
-| ![Merch products](screenshots/merch-products.jpg) | ![Colour selector](screenshots/merch-colour-selector.jpg) |
-| ![Mobile menu](screenshots/mobile-menu-dropdown.jpg) | ![Nav concepts](docs/nav-concepts/concept-c-shine-badge.jpg) |
+| ![Colour selector](screenshots/merch-colour-selector.jpg) | ![Mobile](screenshots/mobile.jpg) |
+
+![Navigation dropdown](screenshots/nav-dropdown.jpg)
+
+*Section variants from the design system (red band, values grid, text-only block, logo row):*
+
+![Section variants](screenshots/section-variants.jpg)
+
+(Screenshots are generated with `tools/readme-shots.mjs`.)
 
 ## Notes
 
-- Built with the help of Claude Code (AI-assisted), with me directing the design, content decisions and checks.
 - The association's content, logo and photos belong to the association and are not licensed here. Names of board members are redacted in the page content. The code (CSS, scripts, patterns) is MIT licensed, see `LICENSE`.
 - Python 3 and Node are needed for the tools (`cd tools && npm install`). Some scripts assume the local WordPress Studio paths of my machine.
