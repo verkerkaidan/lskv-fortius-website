@@ -54,5 +54,5 @@ screenshots/ a few screens of the result
 
 ## Notes
 
-- The association's content, logo and photos belong to the association and are not licensed here. Names of board members are redacted in the page content. The code (CSS, scripts, patterns) is MIT licensed, see `LICENSE`.
+- Copyright (c) 2026 Aidan Verkerk. All rights reserved: the code is public for viewing as a portfolio piece, not for reuse (see `LICENSE`). The association's content, logo and photos belong to the association and are not included. Names of board members are redacted in the page content.
 - Python 3 and Node are needed for the tools (`cd tools && npm install`). Some scripts assume the local WordPress Studio paths of my machine.
