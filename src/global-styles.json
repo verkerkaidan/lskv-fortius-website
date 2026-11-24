@@ -1,0 +1,586 @@
+{
+  "settings": {
+    "color": {
+      "palette": {
+        "theme": [
+          {
+            "slug": "base",
+            "name": "Zwart",
+            "color": "#121212"
+          },
+          {
+            "slug": "contrast",
+            "name": "Licht (off-white)",
+            "color": "#F0F0F0"
+          },
+          {
+            "slug": "accent-1",
+            "name": "Grijs",
+            "color": "#8a8a86"
+          },
+          {
+            "slug": "accent-2",
+            "name": "Donkerrood",
+            "color": "#8f1520"
+          },
+          {
+            "slug": "accent-3",
+            "name": "Rood",
+            "color": "#c81e2c"
+          },
+          {
+            "slug": "accent-4",
+            "name": "Wit",
+            "color": "#ffffff"
+          },
+          {
+            "slug": "accent-5",
+            "name": "Donkergrijs",
+            "color": "#3a3a38"
+          },
+          {
+            "slug": "accent-6",
+            "name": "Lichtgrijs",
+            "color": "#c9c9ce"
+          },
+          {
+            "slug": "accent-7",
+            "name": "Rood (licht, voor tekst op zwart)",
+            "color": "#e8414d"
+          }
+        ]
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|base",
+      "text": "var:preset|color|accent-4"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|archivo",
+      "fontSize": "16px",
+      "lineHeight": "1.4"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|accent-3"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|titan-one",
+          "fontWeight": "400",
+          "textTransform": "uppercase",
+          "letterSpacing": "0.01em"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "clamp(38px, 8vw, 84px)",
+          "lineHeight": "1.1"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "clamp(28px, 5vw, 46px)",
+          "lineHeight": "1.05"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "clamp(18px, 3vw, 24px)",
+          "lineHeight": "1.5"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|accent-3",
+          "text": "var:preset|color|accent-4"
+        },
+        "border": {
+          "radius": "0",
+          "width": "2px",
+          "style": "solid",
+          "color": "var:preset|color|accent-3"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.8rem",
+            "right": "2rem",
+            "bottom": "0.8rem",
+            "left": "2rem"
+          }
+        },
+        ":hover": {
+          "color": {
+            "background": "var:preset|color|accent-2",
+            "text": "var:preset|color|accent-4"
+          },
+          "border": {
+            "color": "var:preset|color|accent-2"
+          }
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|archivo",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "textTransform": "uppercase",
+          "letterSpacing": "0.04em"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "variations": {
+          "outline": {
+            "color": {
+              "background": "transparent",
+              "text": "currentColor"
+            },
+            "border": {
+              "color": "currentColor",
+              "width": "2px",
+              "style": "solid"
+            },
+            "spacing": {
+              "padding": {
+                "top": "0.8rem",
+                "right": "2rem",
+                "bottom": "0.8rem",
+                "left": "2rem"
+              }
+            },
+            ":hover": {
+              "color": {
+                "background": "var:preset|color|accent-4",
+                "text": "var:preset|color|base"
+              },
+              "border": {
+                "color": "var:preset|color|accent-4"
+              }
+            }
+          }
+        }
+      },
+      "core/group": {
+        "variations": {
+          "section-1": {
+            "color": {
+              "background": "var:preset|color|base",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-2": {
+            "color": {
+              "background": "var:preset|color|accent-3",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-4",
+                  "text": "var:preset|color|accent-3"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|base",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-3": {
+            "color": {
+              "background": "var:preset|color|accent-4",
+              "text": "var:preset|color|accent-5"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|base"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-4": {
+            "color": {
+              "background": "var:preset|color|accent-5",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-5": {
+            "color": {
+              "background": "var:preset|color|contrast",
+              "text": "var:preset|color|accent-5"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|base"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "core/columns": {
+        "variations": {
+          "section-1": {
+            "color": {
+              "background": "var:preset|color|base",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-2": {
+            "color": {
+              "background": "var:preset|color|accent-3",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-4",
+                  "text": "var:preset|color|accent-3"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|base",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-3": {
+            "color": {
+              "background": "var:preset|color|accent-4",
+              "text": "var:preset|color|accent-5"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|base"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-4": {
+            "color": {
+              "background": "var:preset|color|accent-5",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-5": {
+            "color": {
+              "background": "var:preset|color|contrast",
+              "text": "var:preset|color|accent-5"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|base"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "core/column": {
+        "variations": {
+          "section-1": {
+            "color": {
+              "background": "var:preset|color|base",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-2": {
+            "color": {
+              "background": "var:preset|color|accent-3",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-4",
+                  "text": "var:preset|color|accent-3"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|base",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-3": {
+            "color": {
+              "background": "var:preset|color|accent-4",
+              "text": "var:preset|color|accent-5"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|base"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-4": {
+            "color": {
+              "background": "var:preset|color|accent-5",
+              "text": "var:preset|color|accent-4"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|accent-4"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          },
+          "section-5": {
+            "color": {
+              "background": "var:preset|color|contrast",
+              "text": "var:preset|color|accent-5"
+            },
+            "elements": {
+              "heading": {
+                "color": {
+                  "text": "var:preset|color|base"
+                }
+              },
+              "button": {
+                "color": {
+                  "background": "var:preset|color|accent-3",
+                  "text": "var:preset|color|accent-4"
+                },
+                ":hover": {
+                  "color": {
+                    "background": "var:preset|color|accent-2",
+                    "text": "var:preset|color|accent-4"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "core/paragraph": {
+        "variations": {
+          "text-annotation": {
+            "css": "width:auto;margin-bottom:0.4rem",
+            "border": {
+              "width": "0",
+              "radius": "0"
+            },
+            "spacing": {
+              "padding": {
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0"
+              }
+            },
+            "color": {
+              "text": "var:preset|color|accent-3"
+            },
+            "typography": {
+              "fontFamily": "var:preset|font-family|archivo",
+              "fontSize": "14px",
+              "fontWeight": "700",
+              "letterSpacing": "0.15em",
+              "textTransform": "uppercase",
+              "lineHeight": "1.4"
+            }
+          }
+        }
+      }
+    }
+  }
+}

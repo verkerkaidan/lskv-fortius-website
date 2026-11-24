@@ -1,0 +1,75 @@
+<!-- wp:template-part {"slug":"header","theme":"twentytwentyfive"} /-->
+
+<!-- wp:group {"tagName":"main","className":"is-style-default","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group is-style-default" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","className":"fortius-archive-header","style":{"spacing":{"padding":{"top":"4.5rem","bottom":"3rem","left":"1.25rem","right":"1.25rem"}}}} -->
+<div class="wp-block-group alignfull fortius-archive-header" style="padding-top:4.5rem;padding-right:1.25rem;padding-bottom:3rem;padding-left:1.25rem"><!-- wp:paragraph {"className":"is-style-text-annotation"} -->
+<p class="is-style-text-annotation">Zoekresultaten</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:query-title {"type":"search"} /-->
+
+<!-- wp:search {"label":"Zoeken","showLabel":false,"placeholder":"Waar ben je naar op zoek?","buttonText":"Zoeken","className":"fortius-404-search"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":6,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
+<div class="wp-block-query alignfull"><!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"fortius-post-card","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group fortius-post-card" style="padding-top:2.5rem;padding-bottom:2.5rem"><!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2","className":"fortius-post-image"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"65%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:65%"><!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"className":"is-style-text-annotation fortius-post-meta"} /-->
+
+<!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
+
+<!-- wp:post-excerpt {"excerptLength":30,"className":"fortius-post-excerpt"} /-->
+
+<!-- wp:read-more {"content":"Lees meer","className":"fortius-read-more"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:group {"align":"full","className":"is-style-section-5 fortius-archive-body","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-5 fortius-archive-body" style="margin-top:0;margin-bottom:0;padding-top:3rem;padding-bottom:3rem"><!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Sorry, er is niets gevonden. Probeer het opnieuw met andere zoekwoorden.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","className":"fortius-pagination-wrap","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide fortius-pagination-wrap" style="margin-top:0;margin-bottom:0"><!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"Vorige"} /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next {"label":"Volgende"} /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:group --></div>
+<!-- /wp:query -->
+
+<!-- wp:group {"align":"full","className":"fortius-more-posts","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull fortius-more-posts" style="margin-top:0;margin-bottom:0;padding-top:3rem;padding-right:0;padding-bottom:3rem;padding-left:0"><!-- wp:paragraph {"align":"wide","className":"is-style-text-annotation"} -->
+<p class="alignwide is-style-text-annotation">Meer berichten</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:query {"queryId":7,"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<!-- wp:group {"align":"full","className":"fortius-more-posts-row","style":{"spacing":{"padding":{"top":"1.25rem","bottom":"1.25rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignfull fortius-more-posts-row" style="padding-top:1.25rem;padding-bottom:1.25rem"><!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+
+<!-- wp:post-date {"isLink":true,"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"className":"fortius-post-meta","style":{"typography":{"textAlign":"right"}}} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"twentytwentyfive"} /-->
+
+
+
+

@@ -1,0 +1,13 @@
+<!-- wp:group {"metadata":{"name":"Volgende merch-ronde","categories":["lskvfortius"]},"align":"full","className":"is-style-section-2 fortius-merch-countdown","style":{"spacing":{"padding":{"top":"28px","bottom":"28px"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-group alignfull is-style-section-2 fortius-merch-countdown" style="margin-top:0;margin-bottom:0;padding-top:28px;padding-bottom:28px"><!-- wp:group {"className":"fortius-section-inner"} -->
+<div class="wp-block-group fortius-section-inner"><!-- wp:paragraph {"className":"is-style-text-annotation"} -->
+<p class="is-style-text-annotation">special drop: bestellen kan nog t/m</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<p class="fortius-countdown__date wp-block-paragraph"><time id="fortius-countdown-date" datetime="2026-11-22">22 november 2026</time></p>
+<div id="fortius-countdown" class="fortius-countdown" data-date="2026-11-22T23:59:59+01:00" data-done="De bestelronde is gesloten. Houd onze socials in de gaten voor de volgende merch-ronde."></div>
+<script>(function(){var el=document.getElementById('fortius-countdown');if(!el)return;var t=new Date(el.getAttribute('data-date')).getTime();var f=new Intl.DateTimeFormat('nl-NL',{day:'numeric',month:'long',year:'numeric'});var d0=document.getElementById('fortius-countdown-date');if(d0&&!isNaN(t))d0.textContent=f.format(new Date(t));function u(n,l){return '<div class="fortius-countdown__unit"><span class="fortius-countdown__num">'+n+'</span><span class="fortius-countdown__label">'+l+'</span></div>';}function tick(){var n=t-Date.now();if(isNaN(t))return;if(n<=0){el.innerHTML='<p class="fortius-countdown__done">'+el.getAttribute('data-done')+'</p>';clearInterval(i);return;}var d=Math.floor(n/864e5),h=Math.floor(n%864e5/36e5),m=Math.floor(n%36e5/6e4),s=Math.floor(n%6e4/1e3);el.innerHTML=u(d,'dagen')+u(h,'uur')+u(m,'min')+u(s,'sec');}var i=setInterval(tick,1000);tick();})();</script>
+<!-- /wp:html --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
